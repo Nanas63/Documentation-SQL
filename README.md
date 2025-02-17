@@ -54,23 +54,72 @@ WAMP (Windows, Apache, MySQL, PHP) est un environnement de développement permet
 * Installez-le en suivant les instructions.
 
 ## Lancer WAMP
-Ouvrez WAMP et assurez-vous que l’icône devient verte (cela signifie que le serveur fonctionne).
-Accédez à phpMyAdmin via http://localhost/phpmyadmin.
+
+* Ouvrez WAMP et assurez-vous que l’icône devient verte (cela signifie que le serveur fonctionne).
 
 
 
 
-# phpMyAdmin : Interface web pour MySQL
+# Interface web pour MySQL : phpMyAdmin
 
 ## Qu’est-ce que phpMyAdmin ?
 phpMyAdmin est une interface web qui permet de gérer facilement les bases de données MySQL.
 
 ## Accéder à phpMyAdmin
 
-1. Démarrer WAMP et vérifier que l’icône est verte.
+1. Démarrer WAMP et vérifier que l’icône est verte. Click gauche sur l'icon verte pour accédez à phpMyAdmin via WAMP
+
+
 2. Ouvrir un navigateur et entrer l’URL :
 
 ```bash
 http://localhost/phpmyadmin/
 ```
+
+3. Bienvenue dans phpMyAdmin
+
+
+* Utilisateur : root
+
+* Mot de passe : (laisser vide par défaut)
+
+* Choix du serveur : MySql
+
+
+## Comment créer sa base de données ?
+
+* création via l'interface graphique
+* création manuelle
+
+
+Exemple d'une création manuelle :
+
+1. Aller dans l'onglet SQL
+
+2. Entrer la requête :
+
+```bash
+* CREATE DATABASE (Nom de la base)
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
+
+```
+
+3. Exécuter
+
+## Comment créer une table ?
+
+```bash
+* CREATE TABLE country(
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    label VARCHAR(255) NOT NULL
+    
+    )ENGINE=INNODB;
+```
+
+
+
+
+
+
 
