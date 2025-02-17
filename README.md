@@ -86,6 +86,16 @@ http://localhost/phpmyadmin/
 
 * Choix du serveur : MySql
 
+<br>
+
+## ⌨️ Quelques commandes SQL essentielles :
+| Commande | Description |
+|----------|------------|
+| SELECT | Récupère les données d'une table |
+| INSERT INTO | Ajoute de nouvelles données |
+| UPDATE | Met à jour des données existantes |
+| DELETE | Supprime des données |
+<br>
 
 ## Comment créer sa base de données ?
 
@@ -100,7 +110,7 @@ Exemple d'une création manuelle :
 2. Entrer la requête :
 
 ```bash
-CREATE DATABASE (Nom de la base)
+CREATE DATABASE nom_de_la_base
 DEFAULT CHARACTER SET utf8
 DEFAULT COLLATE utf8_general_ci;
 
@@ -115,14 +125,14 @@ DEFAULT COLLATE utf8_general_ci;
 2. Entrer la requête : 
 
 ```bash
-CREATE TABLE nom de la table (
+CREATE TABLE nom_de_la_table (
 
     (+ rajouter le nombre de colonne souhaité)
     
-id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,                    ==> PRIMARY KEY == Clé unique AUTO_INCREMENT 
-label VARCHAR(255) NOT NULL                                    ==>
-title VARCHAR(255) NOT NULL,
-first_name VARCHAR(255) NOT NULL,
+id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,                    ==> PRIMARY KEY    === Clé unique 
+label VARCHAR(255) NOT NULL                                    ==> AUTO_INCREMENT === Ajout automatiquement un id '1,2,3' à chaque nouvelle
+title VARCHAR(255) NOT NULL,                                                          ligne
+first_name VARCHAR(255) NOT NULL,                              ==> NOT NULL       === Ne peut pas être vide
 last_name VARCHAR(255) NOT NULL,
 duration INT NULL,
 lauch_at DATE NULL,
@@ -132,7 +142,39 @@ description TEXT NULL
 )ENGINE=INNODB;
 ```
 
+3. Dans l'onglet >Plus dérouler le Concepteur.
 
+Le concepteur permet de visualiser et de modifier les relations entre les tables de la base de données de manière intuitive et graphique.
+Il offre une vue d'ensemble des structures de tables et de leurs connexions, facilitant ainsi la gestion et l'optimisation des bases de données.
+
+
+
+Exemples pratiques de requêtes SQL 📊
+
+🔹 Sélectionner toutes les données d’une table
+```bash
+SELECT * FROM utilisateurs;
+```
+<br>
+
+🔹 Insérer un nouvel utilisateur
+```bash
+INSERT INTO utilisateurs (nom, email) VALUES ('Alice', 'alice@example.com');
+```
+<br>
+
+🔹 Mettre à jour une donnée
+```bash
+UPDATE utilisateurs SET email = 'nouveau@example.com' WHERE nom = 'Alice';
+```
+<br>
+
+🔹 Supprimer un utilisateur
+
+```bash
+DELETE FROM utilisateurs WHERE nom = 'Alice';
+```
+<br>
 
 
 
