@@ -99,9 +99,9 @@ Exemple d'une création manuelle :
 2. Entrer la requête :
 
 ```bash
-* CREATE DATABASE (Nom de la base)
-    DEFAULT CHARACTER SET utf8
-    DEFAULT COLLATE utf8_general_ci;
+CREATE DATABASE (Nom de la base)
+DEFAULT CHARACTER SET utf8
+DEFAULT COLLATE utf8_general_ci;
 
 ```
 
@@ -110,11 +110,11 @@ Exemple d'une création manuelle :
 ## Comment créer une table ?
 
 ```bash
-* CREATE TABLE country(
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    label VARCHAR(255) NOT NULL
+CREATE TABLE country(
+id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+label VARCHAR(255) NOT NULL
     
-    )ENGINE=INNODB;
+)ENGINE=INNODB;
 ```
 
 
