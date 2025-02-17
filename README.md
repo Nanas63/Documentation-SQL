@@ -25,7 +25,7 @@ Pour ce faire, exécutez la commande suivante dans le terminal à la racine du p
 ```
 <br><br>
 
-📌 # Introduction à SQL <br>
+# Introduction à SQL <br>
 
 SQL (Structured Query Language) est un langage utilisé pour manipuler et gérer les bases de données relationnelles.
 <br>
@@ -64,7 +64,7 @@ WAMP (Windows, Apache, MySQL, PHP) est un environnement de développement permet
 
 <br><br>
 
-📌 # Interface web pour MySQL : phpMyAdmin
+# Interface web pour MySQL : phpMyAdmin
 
 ## Qu’est-ce que phpMyAdmin ?
 phpMyAdmin est une interface web qui permet de gérer facilement les bases de données MySQL.
@@ -102,7 +102,7 @@ phpMyAdmin est une interface web qui permet de gérer facilement les bases de do
 | DELETE | Supprime des données |
 <br>
 
-📌 ## Comment créer sa base de données ?
+## Comment créer sa base de données ?
 <br>
 
 * création via l'interface graphique
@@ -125,7 +125,7 @@ Exemple d'une création manuelle :
 3. Exécuter
 <br><br>
 
-📌 ## Comment créer une table ?
+## Comment créer une table ?
 <br>
 
 1. Aller dans SQL
@@ -195,7 +195,7 @@ ADD FOREIGN KEY fk_order_address (address_id) REFERENCES address(id);
 <br><br><br>
 
 
-📌 ## Comment manipuler la requête SELECT ?
+## Comment manipuler la requête SELECT ?
 <br>
 * Syntaxe de Base
 La syntaxe de base d'une requête SELECT est la suivante :
