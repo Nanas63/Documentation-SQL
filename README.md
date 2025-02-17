@@ -26,11 +26,12 @@ cd Documentation-
 SQL (Structured Query Language) est un langage utilisé pour manipuler et gérer les bases de données relationnelles.
 
 ## Pourquoi apprendre SQL ?
-Interagir avec des bases de données efficacement.
-Extraire des informations utiles grâce à des requêtes.
-Utilisé dans de nombreux systèmes de gestion de bases de données (MySQL, PostgreSQL, SQLite...).
 
-### Qu’est-ce qu’une base de données relationnelle ?
+* Interagir avec des bases de données efficacement.
+* Extraire des informations utiles grâce à des requêtes.
+* Utilisé dans de nombreux systèmes de gestion de bases de données (MySQL, PostgreSQL, SQLite...).
+
+## Qu’est-ce qu’une base de données relationnelle ?
 Une base de données relationnelle stocke des données sous forme de tables composées de lignes et de colonnes.
 Chaque table possède une clé primaire qui identifie de manière unique chaque entrée.
 
@@ -41,17 +42,18 @@ Chaque table possède une clé primaire qui identifie de manière unique chaque 
 
 ## Installation et utilisation de WAMP sur Windows
 
-### Qu'est-ce que WAMP ?
+## Qu'est-ce que WAMP ?
 WAMP (Windows, Apache, MySQL, PHP) est un environnement de développement permettant d’exécuter un serveur web en local avec MySQL.
 
 ### Installation de WAMP
 
-### Télécharger WAMP
-Rendez-vous sur le site officiel : [https://www.wampserver.com/](https://www.wampserver.com/)
-Téléchargez la version correspondant à votre système (32 ou 64 bits).
-Installez-le en suivant les instructions.
+## Télécharger WAMP
 
-### Lancer WAMP
+* Rendez-vous sur le site officiel : [https://www.wampserver.com/](https://www.wampserver.com/)
+* Téléchargez la version correspondant à votre système (32 ou 64 bits).
+* Installez-le en suivant les instructions.
+
+## Lancer WAMP
 Ouvrez WAMP et assurez-vous que l’icône devient verte (cela signifie que le serveur fonctionne).
 Accédez à phpMyAdmin via http://localhost/phpmyadmin.
 
@@ -64,5 +66,11 @@ Accédez à phpMyAdmin via http://localhost/phpmyadmin.
 phpMyAdmin est une interface web qui permet de gérer facilement les bases de données MySQL.
 
 ## Accéder à phpMyAdmin
-Démarrer WAMP et vérifier que l’icône est verte.
-Ouvrir un navigateur et entrer l’URL :
+
+1. Démarrer WAMP et vérifier que l’icône est verte.
+2. Ouvrir un navigateur et entrer l’URL :
+
+```bash
+http://localhost/phpmyadmin/
+```
+
