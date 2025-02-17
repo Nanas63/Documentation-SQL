@@ -97,8 +97,9 @@ http://localhost/phpmyadmin/
 | DELETE | Supprime des données |
 <br>
 
-## Comment créer sa base de données ?
-
+📌 ## Comment créer sa base de données ?
+<br
+>
 * création via l'interface graphique
 * création manuelle
 
@@ -119,7 +120,8 @@ DEFAULT COLLATE utf8_general_ci;
 3. Exécuter
 <br><br>
 
-## Comment créer une table ?
+📌 ## Comment créer une table ?
+<br>
 
 1. Aller dans SQL
 2. Entrer la requête : 
@@ -176,15 +178,19 @@ DELETE FROM utilisateurs WHERE nom = 'Alice';
 ```
 <br><br><br>
 
-## Comment manipuler la requête SELECT ?
+
+📌 ## Comment manipuler la requête SELECT ?
 
 * Syntaxe de Base
 La syntaxe de base d'une requête SELECT est la suivante :
 
-sql
+```bash
+SQL
 SELECT colonne1, colonne2, ...
 FROM table
 WHERE condition;
+```
+
 <br>
 
 Exemples pratiques de requêtes SQL 📊
@@ -192,114 +198,114 @@ Exemples pratiques de requêtes SQL 📊
 🔹 Sélectionner toutes les données d’une table
 
 ```bash
-SELECT * FROM utilisateurs;
+    SELECT * FROM utilisateurs;
 ```
 <br>
 
 🔹 Sélectionner des colonnes spécifiques
 
 ```bash
-SELECT nom, email FROM utilisateurs;
+    SELECT nom, email FROM utilisateurs;
 ```
 <br>
 
 🔹 Filtrer les résultats avec WHERE
 ```bash
-SELECT * FROM utilisateurs WHERE nom = 'Alice';
+    SELECT * FROM utilisateurs WHERE nom = 'Alice';
 ```
 <br>
 
 🔹 Trier les résultats avec ORDER BY
 
 ```bash
-SELECT * FROM utilisateurs ORDER BY nom ASC;
+    SELECT * FROM utilisateurs ORDER BY nom ASC;
 ```
-
+<br>
 🔹 Limiter le nombre de résultats
 
 ```bash
-SELECT * FROM utilisateurs LIMIT 5;
+    SELECT * FROM utilisateurs LIMIT 5;
 ```
 <br>
 
 🔹 Compter le nombre d’utilisateurs
 
 ```bash
-SELECT COUNT() FROM utilisateurs;
+    SELECT COUNT() FROM utilisateurs;
 ```
 <br>
 
 🔹 Calculer la moyenne d’une colonne
 
 ```bash
-SELECT AVG(age) FROM utilisateurs;
+    SELECT AVG(age) FROM utilisateurs;
 ```
 <br>
 🔹 Trouver la valeur minimale et maximale d’une colonne
 
 ```bash
-SELECT MIN(age) FROM utilisateurs;
-SELECT MAX(age) FROM utilisateurs;
+    SELECT MIN(age) FROM utilisateurs;
+    SELECT MAX(age) FROM utilisateurs;
 ```
-
+<br>
 🔹 Filtrer avec LIKE
 
 ```bash
-SELECT FROM utilisateurs WHERE nom LIKE 'A%';
+    SELECT FROM utilisateurs WHERE nom LIKE 'A%';
 ```
 <br>
 
 🔹 Utilisation de OR et AND
 
 ```bash
-SELECT * FROM utilisateurs WHERE nom = 'Alice' OR nom = 'Bob';
-SELECT * FROM utilisateurs WHERE nom = 'Alice' AND email LIKE '%@gmail.com';
+    SELECT * FROM utilisateurs WHERE nom = 'Alice' OR nom = 'Bob';
+    SELECT * FROM utilisateurs WHERE nom = 'Alice' AND email LIKE '%@gmail.com';
 ```
 <br>
 
 🔹 Regrouper les résultats avec GROUP BY
 
 ```bash
-SELECT email, COUNT() FROM utilisateurs GROUP BY email;
+    SELECT email, COUNT() FROM utilisateurs GROUP BY email;
 ```
+<br>
 🔹 Filtrer des groupes avec HAVING
 
 ```bash
-SELECT email, COUNT() FROM utilisateurs GROUP BY email HAVING COUNT(*) > 1;
+    SELECT email, COUNT() FROM utilisateurs GROUP BY email HAVING COUNT(*) > 1;
 ```
 <br>
 🔹 Utiliser INNER JOIN pour lier des tables
 
 ```bash
-SELECT utilisateurs.nom, commandes.produit FROM utilisateurs
-INNER JOIN commandes ON utilisateurs.id = commandes.utilisateur_id;
+    SELECT utilisateurs.nom, commandes.produit FROM utilisateurs
+    INNER JOIN commandes ON utilisateurs.id = commandes.utilisateur_id;
 ```
 <br>
 🔹 Concatenation de colonnes avec CONCAT
 
 ```bash
-SELECT CONCAT(nom, ' ', email) AS nom_email FROM utilisateurs;
+    SELECT CONCAT(nom, ' ', email) AS nom_email FROM utilisateurs;
 ```
 <br>
 
 🔹 Insérer un nouvel utilisateur
 
 ```bash
-INSERT INTO utilisateurs (nom, email) VALUES ('Alice', 'alice@example.com');
+    INSERT INTO utilisateurs (nom, email) VALUES ('Alice', 'alice@example.com');
 ```
 <br>
 
 🔹 Mettre à jour une donnée
 
 ```bash
-UPDATE utilisateurs SET email = 'nouveau@example.com' WHERE nom = 'Alice';
+    UPDATE utilisateurs SET email = 'nouveau@example.com' WHERE nom = 'Alice';
 ```
 <br>
 
 🔹 Supprimer un utilisateur
-
 ```bash
-DELETE FROM utilisateurs WHERE nom = 'Alice';
+    DELETE FROM utilisateurs WHERE nom = 'Alice';
 ```
 
 
