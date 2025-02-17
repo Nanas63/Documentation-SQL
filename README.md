@@ -30,7 +30,7 @@ Interagir avec des bases de données efficacement.
 Extraire des informations utiles grâce à des requêtes.
 Utilisé dans de nombreux systèmes de gestion de bases de données (MySQL, PostgreSQL, SQLite...).
 
-## Qu’est-ce qu’une base de données relationnelle ?
+### Qu’est-ce qu’une base de données relationnelle ?
 Une base de données relationnelle stocke des données sous forme de tables composées de lignes et de colonnes.
 Chaque table possède une clé primaire qui identifie de manière unique chaque entrée.
 
@@ -56,11 +56,13 @@ Ouvrez WAMP et assurez-vous que l’icône devient verte (cela signifie que le s
 Accédez à phpMyAdmin via http://localhost/phpmyadmin.
 
 
-## phpMyAdmin : Interface web pour MySQL
 
-### Qu’est-ce que phpMyAdmin ?
+
+# phpMyAdmin : Interface web pour MySQL
+
+## Qu’est-ce que phpMyAdmin ?
 phpMyAdmin est une interface web qui permet de gérer facilement les bases de données MySQL.
 
-### Accéder à phpMyAdmin
+## Accéder à phpMyAdmin
 Démarrer WAMP et vérifier que l’icône est verte.
 Ouvrir un navigateur et entrer l’URL :
