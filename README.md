@@ -1,8 +1,10 @@
 <!-- # Documentation-SQL
 SQL création d'une documentation collaborative -->
 
-Procédure d'installation de git clone
-Cloner le dépôt GitHub :
+## Procédure d'installation de git clone
+
+## Cloner le dépôt GitHub :
+
 Ouvrez l'invite de commande <b>(cmd)</b> ou <b>Git Bash.</b><br><br>
 
 Commencez par cloner le dépôt sur votre machine locale :<br>
@@ -11,5 +13,13 @@ Pour ce faire, exécutez la commande suivante dans le terminal à la racine du p
 
 ```bash
 git clone https://github.com/Nanas63/Documentation-SQL.git
-cd Documentation-SQL
+cd Documentation-
 ```
+
+## 📂 Documentation-SQL
+```bash
+│── 📄 README.md         # Introduction et guide d'utilisation
+```
+
+
+(introduction, commandes SQL de base, utilisation de phpMyAdmin, exemples pratiques, etc.
