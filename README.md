@@ -22,7 +22,7 @@ cd Documentation-
 ```
 <br><br>
 
-# Introduction à SQL 🛠️
+📌 # Introduction à SQL
 SQL (Structured Query Language) est un langage utilisé pour manipuler et gérer les bases de données relationnelles.
 <br>
 
@@ -60,7 +60,7 @@ WAMP (Windows, Apache, MySQL, PHP) est un environnement de développement permet
 
 <br><br>
 
-# Interface web pour MySQL : phpMyAdmin
+📌 # Interface web pour MySQL : phpMyAdmin
 
 ## Qu’est-ce que phpMyAdmin ?
 phpMyAdmin est une interface web qui permet de gérer facilement les bases de données MySQL.
@@ -111,11 +111,24 @@ DEFAULT COLLATE utf8_general_ci;
 
 ## Comment créer une table ?
 
+1. Aller dans SQL
+2. Entrer la requête : 
+
 ```bash
-CREATE TABLE country(
-id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-label VARCHAR(255) NOT NULL
+CREATE TABLE nom de la table (
+
+    (+ rajouter le nombre de colonne souhaité)
     
+id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,                    ==> PRIMARY KEY == Clé unique AUTO_INCREMENT 
+label VARCHAR(255) NOT NULL                                    ==>
+title VARCHAR(255) NOT NULL,
+first_name VARCHAR(255) NOT NULL,
+last_name VARCHAR(255) NOT NULL,
+duration INT NULL,
+lauch_at DATE NULL,
+birth_at DATE NULL,
+description TEXT NULL
+
 )ENGINE=INNODB;
 ```
 
