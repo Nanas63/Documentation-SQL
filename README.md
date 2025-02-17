@@ -1,7 +1,10 @@
 <!-- # Documentation-SQL
 SQL création d'une documentation collaborative -->
 
-# Procédure d'installation de git clone
+# Préalable à l'utilisation de Mysql
+<br><br>
+
+## Procédure d'installation de git clone
 
 ## Cloner le dépôt GitHub :
 
@@ -12,17 +15,18 @@ Une fois le dépôt cloné, il est nécessaire d'installer les dépendances du p
 Pour ce faire, exécutez la commande suivante dans le terminal à la racine du projet :<br>
 
 ```bash
-git clone https://github.com/Nanas63/Documentation-SQL.git
-cd Documentation-
+    git clone https://github.com/Nanas63/Documentation-SQL.git
+    cd Documentation-
 ```
 
 ## 📂 Documentation-SQL
 ```bash
-│── 📄 README.md         # Introduction et guide d'utilisation
+    │── 📄 README.md         # Introduction et guide d'utilisation
 ```
 <br><br>
 
-📌 # Introduction à SQL
+📌 # Introduction à SQL <br>
+
 SQL (Structured Query Language) est un langage utilisé pour manipuler et gérer les bases de données relationnelles.
 <br>
 
@@ -45,16 +49,16 @@ Chaque table possède une clé primaire qui identifie de manière unique chaque 
 
 ## Qu'est-ce que WAMP ?
 WAMP (Windows, Apache, MySQL, PHP) est un environnement de développement permettant d’exécuter un serveur web en local avec MySQL.
-
+<br>
 ### Installation de WAMP
-
-## Télécharger WAMP
-
+<br>
+### Télécharger WAMP
+<br>
 * Rendez-vous sur le site officiel : [https://www.wampserver.com/](https://www.wampserver.com/)
 * Téléchargez la version correspondant à votre système (32 ou 64 bits).
 * Installez-le en suivant les instructions.
 <br>
-## Lancer WAMP
+### Lancer WAMP
 
 * Ouvrez WAMP et assurez-vous que l’icône devient verte (cela signifie que le serveur fonctionne).
 
@@ -67,24 +71,25 @@ phpMyAdmin est une interface web qui permet de gérer facilement les bases de do
 <br><br>
 
 ## Accéder à phpMyAdmin
-
+<br>
 1. Démarrer WAMP et vérifier que l’icône est verte. Click gauche sur l'icon verte pour accédez à phpMyAdmin via WAMP
 
 
 2. Ouvrir un navigateur et entrer l’URL :
 
 ```bash
-http://localhost/phpmyadmin/
+    http://localhost/phpmyadmin/
 ```
-
+<br>
 3. Bienvenue dans phpMyAdmin
 
-
+```bash
 * Utilisateur : root
 
 * Mot de passe : (laisser vide par défaut)
 
 * Choix du serveur : MySql
+```
 
 <br>
 
@@ -98,8 +103,8 @@ http://localhost/phpmyadmin/
 <br>
 
 📌 ## Comment créer sa base de données ?
-<br
->
+<br>
+
 * création via l'interface graphique
 * création manuelle
 
@@ -111,9 +116,9 @@ Exemple d'une création manuelle :
 2. Entrer la requête :
 
 ```bash
-CREATE DATABASE nom_de_la_base
-DEFAULT CHARACTER SET utf8
-DEFAULT COLLATE utf8_general_ci;
+    CREATE DATABASE nom_de_la_base
+    DEFAULT CHARACTER SET utf8
+    DEFAULT COLLATE utf8_general_ci;
 
 ```
 
@@ -127,7 +132,7 @@ DEFAULT COLLATE utf8_general_ci;
 2. Entrer la requête : 
 
 ```bash
-CREATE TABLE nom_de_la_table (
+    CREATE TABLE nom_de_la_table (
 
     (+ rajouter le nombre de colonne souhaité)
     
@@ -154,41 +159,52 @@ Il offre une vue d'ensemble des structures de tables et de leurs connexions, fac
 Exemples pratiques de requêtes SQL 📊
 
 🔹 Sélectionner toutes les données d’une table
+
 ```bash
-SELECT * FROM utilisateurs;
+    SELECT * FROM utilisateurs;
 ```
 <br>
 
 🔹 Insérer un nouvel utilisateur
+
 ```bash
-INSERT INTO utilisateurs (nom, email) VALUES ('Alice', 'alice@example.com');
+    INSERT INTO utilisateurs (nom, email) VALUES ('Alice', 'alice@example.com');
+```
+<br>
+
+🔹 Modifier la structure d’une table avec ALTER TABLE
+
+```bash
+ALTER TABLE `nom_de_la_table`  
+ADD COLUMN address_id INT NOT NULL,
+ADD FOREIGN KEY fk_order_address (address_id) REFERENCES address(id);
 ```
 <br>
 
 🔹 Mettre à jour une donnée
 ```bash
-UPDATE utilisateurs SET email = 'nouveau@example.com' WHERE nom = 'Alice';
+    UPDATE utilisateurs SET email = 'nouveau@example.com' WHERE nom = 'Alice';
 ```
 <br>
 
 🔹 Supprimer un utilisateur
 
 ```bash
-DELETE FROM utilisateurs WHERE nom = 'Alice';
+    DELETE FROM utilisateurs WHERE nom = 'Alice';
 ```
 <br><br><br>
 
 
 📌 ## Comment manipuler la requête SELECT ?
-
+<br>
 * Syntaxe de Base
 La syntaxe de base d'une requête SELECT est la suivante :
-
+<br>
 ```bash
-SQL
-SELECT colonne1, colonne2, ...
-FROM table
-WHERE condition;
+    SQL
+    SELECT colonne1, colonne2, ...
+    FROM table
+    WHERE condition;
 ```
 
 <br>
